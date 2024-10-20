@@ -9,26 +9,27 @@
 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
 ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 </pre>
-#EN passapp - your helper in the password managment!
-Keep your digital password with you in any time!
+#EN passapp - your helper in password management!
+Keep your digital passwords with you at any time!
 
 ❓ How to use it?
 
-Use this steps:
+Follow these steps:
+
 * Download my repository
-* Run the file by executing the command in Terminal (or cmd) "python main.py" (Linux/Windows Supported).
-* Use instructions in the Terminal
+* Run the file by executing the command in Terminal (or cmd) "python main.py" (Linux/Windows supported).
+* Follow the instructions in the Terminal
 
-🛠️ Features
+🛠️ Features:
 
-* Keep your passwords in digital library
+* Keep your passwords in a digital library
 * Add/remove your passwords
-* Or if you don't have ideas, you can generate new!
+* Or if you don't have ideas, you can generate new ones!
 
 📃 Note:
 
-All logins/passes stored in data.db file! Please keep him safe or you can lose your password immediatly!
-data.db DOES NOT HAVE A ENCRYPTION! IT IS A SQL-DATABASE!
+All logins/passwords are stored in the data.db file! Please keep it safe, or you may lose your passwords immediately!
+data.db DOES NOT HAVE ENCRYPTION! IT IS A SQL DATABASE!
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
