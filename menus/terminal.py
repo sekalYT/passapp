@@ -2,18 +2,14 @@ from functionsapp.reg import Registration
 from functionsapp.extract import Extract
 from functionsapp.delete import Remover
 from functionsapp.generator import Generatorpass
-
+from config.config import locale
+from locales.languages import *
 
 class Terminal:
     def menu1():
         while True:
             print('-------------------------------------------------------')
-            print("""Choice the function:
-1 - Register new account
-2 - Extract from database
-3 - Delete from database
-4 - Generate new password
-5 - Exit""")
+            print(Languages[locale['Choice']]['Menu'])
             choice = int(input())
             if choice == 1:
                 Terminal.TerminalRegistration()
@@ -24,6 +20,10 @@ class Terminal:
             elif choice == 4:
                 Terminal.TerminalGenerator()
             elif choice == 5:
+                print(Languages[locale['Choice']]['Inputlang'])
+                newlang = input()
+                locale['Choice'] = f'{newlang}'
+            elif choice == 6:
                 print('Quiting...')
                 break
     

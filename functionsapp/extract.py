@@ -13,6 +13,7 @@ class Extract:
         self.records = cur.fetchall()
         self.print_records()
 
+
     def print_records(self):
         for record in self.records:
             id, service, login, password = record
