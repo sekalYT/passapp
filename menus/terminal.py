@@ -2,8 +2,9 @@ from functionsapp.reg import Registration
 from functionsapp.extract import Extract
 from functionsapp.delete import Remover
 from functionsapp.generator import Generatorpass
-from config.config import locale
+from config.config import locale, settings, save_settings, settings_path
 from locales.languages import *
+
 
 class Terminal:
     def menu1():
@@ -22,34 +23,40 @@ class Terminal:
             elif choice == 5:
                 print(Languages[locale['Choice']]['Inputlang'])
                 newlang = input()
+                newlang = newlang.upper()
                 locale['Choice'] = f'{newlang}'
+                settings['language'] = locale['Choice']
+                save_settings(settings_path, settings)
+                
             elif choice == 6:
-                print('Quiting...')
+                print(Languages[locale['Choice']]['Exit'])
                 break
     
     def TerminalRegistration():
-        print('Enter the service name (Example: Amazon):')
+        print(Languages[locale['Choice']]['Servicename'])
         inputservice = input()
-        print('Enter the login or email to this service (Example: iamvladislav@gmail.com or vlad333):')
+        print(Languages[locale['Choice']]['Logininput'])
         inputlogin = input()
-        print('Enter the password of this service (Example: &%^#^@!555$#@!):')
+        print(Languages[locale['Choice']]['Passwordinput'])
         inputpassword = input()
-        print('Enter data to database... please wait')
+        print(Languages[locale['Choice']]['Resultdata'])
         Registration(inputservice, inputlogin, inputpassword)
     
     def TerminalRemover():
-        print('Enter the ID for remove:')
-        deleteid = int(input())
-        Remover(deleteid)
+        deleteid = input()
+        if deleteid.isdigit():
+            Remover(deleteid)
+        else:
+            print(Languages[locale['Choice']]['Invalidinput'])
 
     def TerminalGenerator():
-        print('Enter the lenght of password:')
+        print(Languages[locale['Choice']]['Lenghtpass'])
         lenght = int(input())
-        print('Do you need a specifical numbers? (Y/N)')
+        print(Languages[locale['Choice']]['Specifysymbols'])
         try:
             choicespecific = input()
         except choicespecific not in ['Y', 'y', 'N', 'n']:
-            print('Invalid input')
+            print(Languages[locale['Choice']]['Invalidinput'])
         Generatorpass(lenght, choicespecific)
         
             

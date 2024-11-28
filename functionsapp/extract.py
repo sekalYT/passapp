@@ -1,5 +1,7 @@
 import sqlite3
 import os
+from config.config import locale
+from locales.languages import *
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 database_path = os.path.join(script_dir, '..', 'data.db')
@@ -17,4 +19,4 @@ class Extract:
     def print_records(self):
         for record in self.records:
             id, service, login, password = record
-            print(f'ID {id}: Service: {service}, Login: {login}, Password: {password}')
+            print(f"ID: {id}, {Languages[locale['Choice']]['Service']}: {service}, {Languages[locale['Choice']]['Login']}: {login}, {Languages[locale['Choice']]['Password']}: {password}")

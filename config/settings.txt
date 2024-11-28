@@ -1,3 +1,2 @@
-Terminal Menu = True
-language = EN
-#you can easily add more languages if you want in locales folder
+Terminal Menu=TRUE
+language=RU

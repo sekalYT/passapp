@@ -1,6 +1,7 @@
 import os
 
 settings_path = os.path.join(os.path.dirname(__file__), 'settings.txt')
+
 settings = {}
 
 def load_settings(settings_path):
@@ -11,6 +12,11 @@ def load_settings(settings_path):
                 key, value = line.split('=', 1)
                 settings[key.strip()] = value.strip().upper()
     return settings
+
+def save_settings(settings_path, settings):
+    with open(settings_path, 'w') as file:
+        for key, value in settings.items():
+            file.write(f"{key}={value}\n")
 
 load_settings(settings_path)
 
