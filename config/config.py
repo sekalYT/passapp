@@ -10,7 +10,10 @@ def load_settings(settings_path):
             line = line.rstrip()
             if line and '=' in line:
                 key, value = line.split('=', 1)
-                settings[key.strip()] = value.strip().upper()
+                if value.lower() in ['true', 'false']:
+                    settings[key.strip()] = value.lower() == 'true'
+                else:
+                    settings[key.strip()] = value.strip().upper()
     return settings
 
 def save_settings(settings_path, settings):

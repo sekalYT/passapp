@@ -1,2 +1,2 @@
-Terminal Menu=TRUE
 language=RU
+terminalmenu=False

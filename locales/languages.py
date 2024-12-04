@@ -63,7 +63,14 @@ Do you need a specifical numbers? (Example: %$#@, etc) (Y/N)
     'Exit': 'Quiting...',
 
 #ERRORS
-    'Invalidinput': 'Invalid Input, please try again'
+    'Invalidinput': 'Invalid Input, please try again',
+
+
+#PYQT
+    'Registration': 'Register',
+    'Extract': 'Extract from database',
+    'Delete': 'Delete from database',
+    'Generator': 'Generate new password'
 
     },
     'RU': {
@@ -130,6 +137,13 @@ Do you need a specifical numbers? (Example: %$#@, etc) (Y/N)
     'Exit': 'Выход из программы...',
 
 #ERRORS
-    'Invalidinput': 'Неправильный ввод, попробуйте еще раз'
+    'Invalidinput': 'Неправильный ввод, попробуйте еще раз',
+
+
+#PYQT
+    'Registration': 'Регистрация',
+    'Extract': 'Извлечь из базы данных',
+    'Delete': 'Удалить из базы данных',
+    'Generator': 'Сгенерировать новый пароль'
 }
 }

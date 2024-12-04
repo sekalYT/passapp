@@ -1,10 +1,12 @@
 from menus.terminal import Terminal
+from menus.pyqt import PyQTInterface
 import os
 from config.config import *
 
 if __name__ == '__main__':
     settingsfile = open(settings_path)
-    if settings.get('terminalmenu', True):
-        Terminal.menu1()
+
+    if not settings.get('terminalmenu', True):
+        PyQTInterface().run()
     else:
-        print('In Development...')
+        Terminal.run()
