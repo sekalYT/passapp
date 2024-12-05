@@ -1,2 +1,2 @@
-language=RU
 terminalmenu=False
+language=EN

@@ -54,6 +54,7 @@ Do you need a specifical numbers? (Example: %$#@, etc) (Y/N)
     'Service': 'Service',
     'Login': 'Login',
     'Password': 'Password',
+    'EnterMasterKey': 'Enter the master key',
 
 #DELETE.PY
     'Deleted': 'Successfuly deleted',
@@ -64,13 +65,21 @@ Do you need a specifical numbers? (Example: %$#@, etc) (Y/N)
 
 #ERRORS
     'Invalidinput': 'Invalid Input, please try again',
+    'Decrypterror': 'Decryption error',
 
 
 #PYQT
     'Registration': 'Register',
     'Extract': 'Extract from database',
     'Delete': 'Delete from database',
-    'Generator': 'Generate new password'
+    'Generator': 'Generate new password',
+
+#CLOUD
+    'Uploaddata':'Upload to Cloud',
+    'Downloaddata':'Download data from Cloud'
+
+
+
 
     },
     'RU': {
@@ -127,6 +136,7 @@ Do you need a specifical numbers? (Example: %$#@, etc) (Y/N)
     'Service': 'Сервис',
     'Login': 'Логин',
     'Password': 'Пароль',
+    'EnterMasterKey': 'Введите мастер-ключ',
 
 #DELETE.PY
     'Deleted': 'Успешно удалено',
@@ -138,12 +148,18 @@ Do you need a specifical numbers? (Example: %$#@, etc) (Y/N)
 
 #ERRORS
     'Invalidinput': 'Неправильный ввод, попробуйте еще раз',
+    'Decrypterror': 'Ошибка дешифровки данных',
 
 
 #PYQT
     'Registration': 'Регистрация',
     'Extract': 'Извлечь из базы данных',
     'Delete': 'Удалить из базы данных',
-    'Generator': 'Сгенерировать новый пароль'
+    'Generator': 'Сгенерировать новый пароль',
+
+#CLOUD
+    'Uploaddata':'Залить данные в облако',
+    'Downloaddata':'Скачать данные из облака'
+
 }
 }
