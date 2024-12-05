@@ -42,9 +42,10 @@ A simple app for secure password management with multilingual support.
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/password-manager.git
-cd password-manager
+git clone https://github.com/sekalYT/passapp
+cd passapp
 pip install -r requirements.txt
+python main.py
 ```
 
 
@@ -97,4 +98,5 @@ pip install -r requirements.txt
 ```bash
 git clone https://github.com/sekalYT/passapp
 cd passapp
+pip install -r requirements.txt
 python main.py
