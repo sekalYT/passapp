@@ -6,11 +6,15 @@ A simple app for secure password management with multilingual support.
 
 ## 🌟 Features
 
+- 🔒 ENCRYPTION (NEW)
+- ☁️ CLOUD SUPPORT (NEW)
 - 🔑 Password Registration
 - 📋 Password Extraction 
 - 🗑️ Password Deletion
 - 🎲 Password Generation
 - 🌍 Multilingual Support (+ a simple way to add new languages!)
+- ⛓️‍💥 Cross-support with two interfaces (Pyqt, Terminal)
+- ❤️‍🩹 Termux supported! 
 
 ## 🛠️ Technologies
 
@@ -38,9 +42,10 @@ A simple app for secure password management with multilingual support.
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/password-manager.git
-cd password-manager
+git clone https://github.com/sekalYT/passapp
+cd passapp
 pip install -r requirements.txt
+python main.py
 ```
 
 
@@ -55,11 +60,15 @@ pip install -r requirements.txt
 
 ## 🌟 Возможности
 
+- 🔒 ШИФРОВАНИЕ (NEW)
+- ☁️ ПОДДЕРЖКА ОБЛАКА (NEW)
 - 🔑 Регистрация паролей
 - 📋 Извлечение паролей 
 - 🗑️ Удаление паролей
 - 🎲 Генерация паролей
 - 🌍 Мультиязычная поддержка (+ легкое добавление новых языков!)
+- ⛓️‍💥 Кроссподдержка интерфейсов (Терминал и Pyqt)
+- ❤️‍🩹 Поддержка Termux!
 
 ## 🛠️ Технологии
 
@@ -89,4 +98,5 @@ pip install -r requirements.txt
 ```bash
 git clone https://github.com/sekalYT/passapp
 cd passapp
+pip install -r requirements.txt
 python main.py
