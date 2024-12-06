@@ -17,8 +17,6 @@ def load_settings(settings_path):
     return settings
 
 def save_settings(settings_path, settings):
-    print(f"[DEBUG] Saving settings to {settings_path}")
-    print(f"[DEBUG] Settings to save: {settings}")
     try:
         current_settings = {}
         try:
@@ -37,11 +35,8 @@ def save_settings(settings_path, settings):
 
         with open(settings_path, 'w') as file:
             for key, value in current_settings.items():
-                print(f"[DEBUG] Writing: {key}={value}")
                 file.write(f"{key}={value}\n")
-        print("[DEBUG] Settings saved successfully")
     except Exception as e:
-        print(f"[DEBUG] Error saving settings: {e}")
         traceback.print_exc()
 
 load_settings(settings_path)

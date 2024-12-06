@@ -56,7 +56,9 @@ class Terminal(BaseInterface):
 
     @classmethod
     def _get_file_sync_instance(cls):
-        config_dir = os.path.join('D:\\otherprojects\\passapp', 'config')
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(os.path.dirname(current_dir))
+        config_dir = os.path.join(project_root, 'passapp', 'config')
         
         if not os.path.exists(config_dir):
             os.makedirs(config_dir)
