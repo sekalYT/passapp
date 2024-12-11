@@ -41,6 +41,7 @@ A simple app for secure password management with multilingual support.
 
 ## 📦 Installation
 
+FOR PC (Linux, Windows)
 ```bash
 git clone https://github.com/sekalYT/passapp
 cd passapp
@@ -48,6 +49,14 @@ pip install -r requirements.txt
 python main.py
 ```
 
+FOR TERMUX
+```bash
+git clone https://github.com/sekalYT/passapp
+cd passapp
+curl -s https://raw.githubusercontent.com/dev-bittu/cryptography-in-termux/main/commands.sh | bash
+pip install requests
+python main.py
+```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -95,8 +104,19 @@ python main.py
 
 ## 📦 Установка
 
+Для компьютеров (Linux, Windows)
 ```bash
 git clone https://github.com/sekalYT/passapp
 cd passapp
 pip install -r requirements.txt
 python main.py
+```
+
+Для TERMUX
+```bash
+git clone https://github.com/sekalYT/passapp
+cd passapp
+curl -s https://raw.githubusercontent.com/dev-bittu/cryptography-in-termux/main/commands.sh | bash
+pip install requests
+python main.py
+```
