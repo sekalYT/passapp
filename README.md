@@ -55,7 +55,7 @@ git clone https://github.com/sekalYT/passapp
 cd passapp
 curl -s https://raw.githubusercontent.com/dev-bittu/cryptography-in-termux/main/commands.sh | bash
 pip install requests
-python main.py
+python fortermux.py
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -118,5 +118,5 @@ git clone https://github.com/sekalYT/passapp
 cd passapp
 curl -s https://raw.githubusercontent.com/dev-bittu/cryptography-in-termux/main/commands.sh | bash
 pip install requests
-python main.py
+python fortermux.py
 ```
